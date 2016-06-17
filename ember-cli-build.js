@@ -7,6 +7,32 @@ module.exports = function(defaults) {
     // Add options here
   });
 
+
+  app.import('vendor/bootstrap.min.css');
+  app.import('vendor/font-awesome/font-awesome.min.css');
+
+  app.import('vendor/font-awesome/fonts/fontawesome-webfont.eot', {
+      destDir: 'fonts'
+    });
+
+  app.import('vendor/font-awesome/fonts/fontawesome-webfont.svg', {
+    destDir: 'fonts'
+  });
+
+  app.import('vendor/font-awesome/fonts/fontawesome-webfont.ttf', {
+    destDir: 'fonts'
+  });
+
+  app.import('vendor/font-awesome/fonts/fontawesome-webfont.woff', {
+    destDir: 'fonts'
+  });
+
+  app.import('vendor/ace.min.css');
+  app.import('vendor/ace-rtl.min.css');
+
+  app.import('vendor/ace-skins.min.css');
+
+
   // Use `app.import` to add additional libraries to the generated
   // output files.
   //

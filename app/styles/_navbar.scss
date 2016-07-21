@@ -1,0 +1,24 @@
+.navbar_search .nav-search-input,
+.navbar_search .nav-search-input:focus {
+  background: transparent;
+  border: none;
+  color: #fff;
+}
+
+.navbar_search .nav-search-input::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.navbar_search .nav-search-input:-moz-placeholder {
+  /* Firefox 18- */
+  color: #fff;
+}
+
+.navbar_search .nav-search-input::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #fff;
+}
+
+.navbar_search .nav-search-input:-ms-input-placeholder {
+  color: #fff;
+}

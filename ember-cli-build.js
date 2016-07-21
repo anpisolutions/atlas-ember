@@ -1,37 +1,12 @@
 /*jshint node:true*/
 /* global require, module */
 var EmberApp = require('ember-cli/lib/broccoli/ember-app');
+var Funnel = require('broccoli-funnel');
 
 module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
     // Add options here
   });
-
-
-  app.import('vendor/bootstrap.min.css');
-  app.import('vendor/font-awesome/font-awesome.min.css');
-
-  app.import('vendor/font-awesome/fonts/fontawesome-webfont.eot', {
-      destDir: 'fonts'
-    });
-
-  app.import('vendor/font-awesome/fonts/fontawesome-webfont.svg', {
-    destDir: 'fonts'
-  });
-
-  app.import('vendor/font-awesome/fonts/fontawesome-webfont.ttf', {
-    destDir: 'fonts'
-  });
-
-  app.import('vendor/font-awesome/fonts/fontawesome-webfont.woff', {
-    destDir: 'fonts'
-  });
-
-  app.import('vendor/ace.min.css');
-  app.import('vendor/ace-rtl.min.css');
-
-  app.import('vendor/ace-skins.min.css');
-
 
   // Use `app.import` to add additional libraries to the generated
   // output files.
@@ -46,5 +21,22 @@ module.exports = function(defaults) {
   // please specify an object with the list of modules as keys
   // along with the exports of each module as its value.
 
-  return app.toTree();
+app.import('vendor/ace/css/ace.min.css');
+app.import('vendor/ace/css/ace-fonts.css');
+
+app.import('bower_components/jquery/dist/jquery.min.js');
+app.import('vendor/ace/js/ace.min.js');
+app.import('vendor/ace/js/ace-elements.min.js');
+
+var avatars = new Funnel('vendor/ace/avatars', {
+    srcDir: '/',
+    destDir: '/avatars'
+});
+
+var aceFonts = new Funnel('vendor/ace/fonts', {
+    srcDir: '/',
+    destDir: '/fonts'
+});
+
+  return app.toTree([avatars,aceFonts]);
 };

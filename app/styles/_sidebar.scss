@@ -1,0 +1,28 @@
+.ember-container .sidebar-shortcuts {
+  height: 86px;
+  max-height: 86px;
+}
+
+.anpi_logo {
+  height: 60px;
+  padding-top: 10px;
+  margin-left: -10px;
+}
+
+.breadcrumbs {
+  min-height: 46px;
+  background: #438eb9;
+}
+
+.logout_part {
+  width: 260px;
+  height: 45px;
+  position: absolute;
+  right: 0;
+  top: 0px;
+}
+
+.open_task_table thead tr th,
+.open_task_table tbody tr td {
+  font-size: 11px;
+}

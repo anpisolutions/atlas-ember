@@ -1,0 +1,39 @@
+<div class="main-container ember-container" id="main-container">
+    <div class="main-container-inner">
+        <a class="menu-toggler" id="menu-toggler" href="#">
+                <span class="menu-text">
+                    </span>
+        </a>
+        {{partial 'sidebar'}}
+        <div class="main-content">
+            {{partial 'header'}}
+
+            <div class="page-content">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <!-- PAGE CONTENT BEGINS -->
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="table-responsive">
+                                    {{outlet}}
+                                </div>
+                                <!-- /.table-responsive  -->
+                            </div>
+                            <!-- /span  -->
+                        </div>
+                        <!-- /row  -->
+                    </div>
+                    <!-- /.col  -->
+                </div>
+                <!-- /.row  -->
+            </div>
+            <!-- /.page-content  -->
+        </div>
+        <!-- /.main-content  -->
+    </div>
+    <!-- /.main-container-inner  -->
+    <a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
+        <i class="icon-double-angle-up icon-only bigger-110">
+        </i>
+    </a>
+</div>

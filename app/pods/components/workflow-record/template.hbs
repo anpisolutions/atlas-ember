@@ -1,0 +1,91 @@
+<form class="form-horizontal" {{action 'submit' on="submit"}}>
+<fieldset>
+<legend>Form Name</legend>
+<div class="form-group">
+  <label class="col-md-4 control-label" for="name">Name</label>
+  <div class="col-md-5">
+  {{input id="name" value=rec.name placeholder="Name" class="form-control input-md" required="" type="text"}}
+  </div>
+</div>
+<div class="form-group">
+  <label class="col-md-4 control-label" for="gates">Gates</label>
+  <div class="col-md-5">
+  {{input id="gates" value=rec.gates placeholder="Gates" class="form-control input-md" required="" type="text"}}
+  </div>
+</div>
+<div class="form-group">
+  <label class="col-md-4 control-label" for="tasks">Tasks</label>
+  <div class="col-md-5">
+  {{input id="tasks" value=rec.tasks placeholder="Tasks" class="form-control input-md" required="" type="text"}}
+  </div>
+</div>
+<div class="form-group">
+  <label class="col-md-4 control-label" for="usageCountInProg">UsageCount InProg</label>
+  <div class="col-md-5">
+  {{input id="usageCountInProg" value=rec.usageCountInProg placeholder="Usage Count In Progress" class="form-control input-md" required="" type="text"}}
+  </div>
+</div>
+<div class="form-group">
+  <label class="col-md-4 control-label" for="usageCountComp">Usage Count Comp</label>
+  <div class="col-md-5">
+  {{input id="usageCountComp" value=rec.usageCountComp placeholder="Usage Count Completed" class="form-control input-md" required="" type="text"}}
+  </div>
+</div>
+<div class="form-group">
+  <label class="col-md-4 control-label" for="duration">Duration</label>
+  <div class="col-md-5">
+  {{input id="duration" value=rec.duration placeholder="Duration" class="form-control input-md" required="" type="text"}}
+  </div>
+</div>
+<div class="form-group">
+  <label class="col-md-4 control-label" for="createdOn">Created On</label>
+  <div class="col-md-5">
+  {{input id="createdOn" value=rec.createdOn placeholder="Created On" class="form-control input-md" required="" type="text"}}
+  </div>
+</div>
+<div class="form-group">
+  <label class="col-md-4 control-label" for="updatedOn">Updated On</label>
+  <div class="col-md-5">
+  {{input id="updatedOn" value=rec.updatedOn placeholder="Updated On" class="form-control input-md" required="" type="text"}}
+  </div>
+</div>
+<div class="form-group">
+  <label class="col-md-4 control-label" for="createdBy">Created By</label>
+  <div class="col-md-5">
+  {{input id="createdBy" value=rec.createdBy placeholder="Created By" class="form-control input-md" required="" type="text"}}
+  </div>
+</div>
+<div class="form-group">
+  <label class="col-md-4 control-label" for="updatedBy">Updated By</label>
+  <div class="col-md-5">
+  {{input id="updatedBy" value=rec.updatedBy placeholder="Updated By" class="form-control input-md" required="" type="text"}}
+  </div>
+</div>
+<div class="form-group">
+  <label class="col-md-4 control-label" for="status">Status</label>
+  <div class="col-md-4">
+      <label class="radio-inline" for="status-0">
+      {{#radio-button value=1 groupValue=rec.status }}{{/radio-button}}Yes
+      </label>
+      <label class="radio-inline" for="status-1">
+      {{#radio-button value=0 groupValue=rec.status }}No{{/radio-button}}No
+      </label>
+
+    <!--<label class="radio-inline" for="status-0">
+      {{input name="status" id="status-0" value="1" checked="checked" type="radio"}}
+      Yes
+    </label>
+    <label class="radio-inline" for="status-1">
+      {{input name="status" id="status-1" value="0" type="radio"}}
+      No
+    </label>-->
+  </div>
+</div>
+<div class="form-group">
+  <div class="col-md-12 text-right marg">
+    {{#link-to 'workflow' id="add" name="add" class="btn btn-default"}}Cancel{{/link-to}}
+      <button id="submit" name="submit" class="btn btn-primary pull-right margin-left">{{butLabel}}</button>
+  </div>
+</div>
+</fieldset>
+</form>

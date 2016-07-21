@@ -1,0 +1,110 @@
+<div class="widget-box custom-widget-loader ap-widgets" id="my_workflows" style=" ">
+
+    <div class="widget-header widget-header-small header-color-blue">
+        <h6 class="smaller">Workflow Setup</h6>
+
+        <div class="widget-toolbar">
+            <i class="icon-search nav-search-icon" onclick="ShowHide_Search(this)"></i>
+            <a href="https://atlas.anpi.com/serviceorder/workflows#" data-action="">
+                <i class="icon-refresh white" onclick="reload_workflow_setup()"></i>
+            </a>
+            <a href="javascript:;" class="help"><i class="fa fa-question"></i></a>
+            <a href="https://atlas.anpi.com/serviceorder/workflows#" data-action="collapse " class="defaultcursor" onclick="expandWindow(this)">
+                <i class="fa fa-expand defaultcursor"></i>
+            </a>
+        </div>
+        <div class="pull-right new-propsal-bt" style="margin: 4px;">
+            {{#link-to 'workflow/new' class="btn btn-xs btn-info" style="color: #000 !important; "}}<i class="icon-plus"></i>&nbsp;New WorkFlow{{/link-to}}
+        </div>
+    </div>
+    <div class="widget-body" style="height: 86.3%;height: calc( 100% - 70px);overflow:auto ; border-bottom:none; ">
+        <div class="widget-main tiny-p" style="padding: 0px">
+            <div class="all-workflow-table" id="">
+                <div class="table-responsive">
+                    <div id="workflow_setup_table_wrapper" class="dataTables_wrapper" role="grid" style="width: 100%;">
+
+                        <div id="workflow_setup_table_wrapper" class="dataTables_wrapper" role="grid" style="width: 100%;"><div class="row"><div class="col-sm-6"></div></div><table id="workflow_setup_table" class="tr-bg table table-striped table-bordered table-hover gridster-editable dataTable" style="table-layout: fixed; min-width: 100% !important; width: 100%;" aria-describedby="workflow_setup_table_info">
+                            <thead>
+                            <tr class="th-bg-color" role="row">
+                            <th class="center sorting" role="columnheader" tabindex="0" aria-controls="workflow_setup_table" rowspan="1" colspan="1" style="width: 271px;" aria-label=" Workflow Name : activate to sort column ascending"><span> Workflow Name </span></th><th class="center sorting" role="columnheader" tabindex="0" aria-controls="workflow_setup_table" rowspan="1" colspan="1" style="width: 132px;" aria-label=" Gates / Tasks : activate to sort column ascending"><span> Gates / Tasks </span></th><th class="center sorting" role="columnheader" tabindex="0" aria-controls="workflow_setup_table" rowspan="1" colspan="1" style="width: 132px;" aria-label=" Usage Count (In Progress/Completed) : activate to sort column ascending"><span> Usage Count </span><br><span style="font-weight: normal;font-size:9px;">(In Progress/Completed)</span> </th><th class="center sorting" role="columnheader" tabindex="0" aria-controls="workflow_setup_table" rowspan="1" colspan="1" style="width: 200px;" aria-label=" Duration : activate to sort column ascending"><span> Duration </span></th><th class="center sorting" role="columnheader" tabindex="0" aria-controls="workflow_setup_table" rowspan="1" colspan="1" style="width: 200px;" aria-label=" Created On / Updated On : activate to sort column ascending"><span> Created On /<br> Updated On </span></th><th class="center sorting" role="columnheader" tabindex="0" aria-controls="workflow_setup_table" rowspan="1" colspan="1" style="width: 131px;" aria-label=" Created By / Updated By : activate to sort column ascending"><span> Created By /<br> Updated By </span></th><th class="center sorting" role="columnheader" tabindex="0" aria-controls="workflow_setup_table" rowspan="1" colspan="1" style="width: 131px;" aria-label=" Status : activate to sort column ascending"><span> Status </span></th></tr>
+                            </thead>
+
+
+                            <tbody role="alert" aria-live="polite" aria-relevant="all">
+                           {{#each model as |entry|}}
+
+                            <tr class="odd">
+
+                                <td >
+                                    <span class="1020_fwnhide show">
+                                    {{entry.name}}
+                                    <i class="icon icon-edit pull-left cursor_pointer" title="Edit Workflow" style="font-size: 16px;"></i></span>
+                                </td>
+
+
+                                <td class="center  " data-order="4">
+                                    {{entry.gates}}/{{entry.tasks}}
+                                </td>
+
+                                <td data-order="18/16" class=" ">
+                                    {{entry.usageCountInProg}}/{{entry.usageCountComp}}
+                                </td>
+
+                                <td class=" ">
+                                    {{entry.duration}}
+                                </td>
+
+                                <td class=" ">
+                                    {{entry.createdOn}}
+                                    <br>
+                                    {{entry.updatedOn}}
+                                </td>
+
+                                <td class=" ">
+                                    <i class="icon-user"></i>{{entry.createdBy}}
+                                    <br>
+                                    <i class="icon-user"></i>{{entry.updatedBy}}
+                                </td>
+
+                                <td class="center  ">
+                                    {{bootstrap-switch}}
+                                    {{entry.status}}
+                                </td>
+                            </tr>
+                              {{/each}}
+
+                            </tbody>
+                            </table>
+                            </div>
+                            <div class="row"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="widget-footer  clearfix workfowsetup_dt_footer">
+        <div class="row col-sm-12">
+            <div class="col-sm-6 col-sm-6">
+                <div class="text-info alert alert-block alert-success" id="save-info" style="padding: 2px 5px 2px 5px; border: none; margin: 5px 0px 0px; display: none; float: left;"></div>
+                <div class="input-space pull-left hide">
+                    <!--<button class="btn btn-info btn-xs" onclick="update_transaction_data('expediate')">Mark Expediate</button>-->
+                    <button class="actions transaction_actions btn btn-info btn-xs btn ">
+                        Edit
+                    </button>
+                </div>
+                <div class="input-space pull-left hide">
+                    <button class="actions transaction_actions btn btn-info btn-xs">View</button>
+                </div>
+                <div id="response_messages">
+                    <div class="flash_message alert alert-block alert-success" style="display: none;"></div>
+                    <div class="flash_workflow_notice"></div>
+
+                </div>
+            </div>
+            <div class="col-sm-6">
+            </div>
+        </div>
+    </div>
+</div>
+
+

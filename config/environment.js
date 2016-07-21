@@ -2,10 +2,14 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'atlas-ember',
+    modulePrefix: 'atlas',
     environment: environment,
     baseURL: '/',
     locationType: 'auto',
+    podModulePrefix: 'atlas/pods',
+    FIXTURES: {
+      enabled: true
+    },
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build

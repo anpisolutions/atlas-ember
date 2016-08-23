@@ -82,9 +82,14 @@
   </div>
 </div>
 <div class="form-group">
-  <div class="col-md-12 text-right marg">
-    {{#link-to 'workflow' id="add" name="add" class="btn btn-default"}}Cancel{{/link-to}}
-      <button id="submit" name="submit" class="btn btn-primary pull-right margin-left">{{butLabel}}</button>
+  <div class="col-md-3">
+      {{#link-to 'workflow' id="add" name="add" class="btn btn-default"}}Cancel{{/link-to}}
+      <!--
+    <button id="add" name="add" class="btn btn-default">Cancel</button>
+    -->
+  </div>
+  <div class="col-md-6">
+    <button id="submit" name="submit" class="btn btn-primary pull-right">{{butLabel}}</button>
   </div>
 </div>
 </fieldset>

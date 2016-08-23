@@ -7,9 +7,6 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('workflow');
-  this.route('workflow/new', {path:'workflow/new'});
-  this.route('workflow/edit', {path:'workflow/edit'});
-
   this.route('serviceorder', function() {
     this.route('opentasks');
     this.route('serviceorders');
@@ -17,6 +14,8 @@ Router.map(function() {
     this.route('residentialorders');
     this.route('residentialdidlnp');
   });
+  this.route('workflowNew', {path:'workflow/new'});
+  this.route('workflowEdit');
 });
 console.log("Router==",Router);
 export default Router;

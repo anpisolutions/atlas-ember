@@ -16,9 +16,9 @@ export default Ember.Route.extend({
             rec.save().then(function() {
                 rec.deleteRecord();
                 _this.transitionTo('workflow');
-            }).catch(function() {
+            }).catch(function(resp) {
                 alert("Failed adding Record.");
             });
         }
-    }
+    }    
 });

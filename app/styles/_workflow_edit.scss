@@ -1,0 +1,197 @@
+.ember-container {}
+
+.ember-container .sidebar-shortcuts {
+    height: 86px;
+    max-height: 86px;
+}
+
+.ember_anpi_logo {
+    height: 60px;
+    padding-top: 10px;
+    margin-left: -10px;
+}
+
+.global_search .nav-search-input,
+.global_search .nav-search-input:focus {
+    background: transparent;
+    border: none;
+    color: #fff;
+}
+
+.global_search .nav-search-input::-webkit-input-placeholder {
+    color: #fff;
+}
+
+.global_search .nav-search-input:-moz-placeholder {
+    /* Firefox 18- */
+    color: #fff;
+}
+
+.global_search .nav-search-input::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #fff;
+}
+
+.global_search .nav-search-input:-ms-input-placeholder {
+    color: #fff;
+}
+
+.breadcrumbs {
+    min-height: 46px;
+    background: #438eb9;
+}
+
+.logout_part {
+    width: 260px;
+    height: 45px;
+    position: absolute;
+    right: 0;
+    top: 0px;
+}
+
+.open_task_table thead tr th,
+.open_task_table tbody tr td {
+    font-size: 11px;
+}
+.header {
+    margin: 5px 0px;
+}
+.add_gate_section {
+    width:226px;
+    height: 100%;
+    float: left; 
+    border: 1px solid #ccc;
+    padding: 0px 4px;
+    box-shadow: 0 0 5px #ccc;
+    border: 1px solid #fff;
+}
+.add_gate_btn {
+    text-align: right;
+    padding-right: 5px;
+    background: #3a87ad;
+    color: #fff;
+    width: 226px;
+    margin-left: -5px;
+  
+}
+.add_gate_btn a{
+    color: #fff;
+    text-decoration: none;
+}
+.workgate-active .gate_title ,.single_gate:hover .gate_title {
+    background: #2a8bcc !important;
+    color: #fff !important;
+    padding: 2px 5px;
+}
+.gate_title {
+    background: #f7f7f7;
+    background-image: -webkit-gradient(linear, left 0%, left 100%, from(#fff), to(#eee));
+    background-image: -webkit-linear-gradient(top, #fff, 0%, #eee, 100%);
+    background-image: -moz-linear-gradient(top, #fff 0%, #eee 100%);
+    background-image: linear-gradient(to bottom, #fff 0%, #eee 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffeeeeee', GradientType=0);
+    color: #669fc7;
+    border-bottom: 1px solid #DDD;
+    position: relative;
+    padding: 2px 5px;
+}
+.single_gate {
+    margin: 5px 0px 12px 0px;
+    border: 1px solid #ccc;
+    width: 202px;
+    position: relative;
+}
+.workgate-active ,.single_gate:hover {
+    border: 1px solid #2a8bcc !important;
+}
+.sub-word-gate-div {
+    text-align: center;
+    margin: 8px auto;
+    width: 85px;
+}
+.sub-word-gate-div .work-circle {
+    margin: 0px 5px 5px 5px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    width: 25px;
+    height: 25px;
+    border: 3px solid #9abc32;
+    padding: 0px;
+    font-size: 14px;
+    float: left;
+}
+.work-circle-text {
+    margin: 3px 2px 0px 4px;
+    float: left;
+}
+.gate-icons {
+    margin: 12px 12px 0px 0px !important;
+}
+.workgate-arrow {
+    width: 2px;
+    height: 20px;
+    position: absolute;
+    bottom: -21px;
+    color: #c8d2d8;
+    background: #c8d2d8;
+    left: 48%;
+}
+.workgate-arrow i {
+    margin: 0px 0px 0px -6px;
+    font-size: 19px;
+}
+.workgate-active .work-arrow {
+    top: 0px;
+    right: -14px;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 35px solid transparent;
+    border-bottom: 35px solid transparent;
+    border-left: 12px solid #2a8bcc;
+}
+.new-gate-sec {
+    height: 400px;
+}
+.new-gate-sec .single_gate:last-child .workgate-arrow{display: none;}
+.workflow_gate_table {
+    width: calc(100% - 250px);
+    float: left;
+    margin-left: 15px;
+}
+.slider-div {
+    width: 25px;
+    height: 25px;
+    background: #858585;
+    color: #fff;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    text-indent: 0px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.gate_list_slider {
+    height: 480px;
+    position: relative;
+}
+.WF-bx-next {
+    position: absolute;
+    left: 55%;
+    bottom: 10px;
+    padding: 4px 0px;
+}
+    .WF-bx-prev {
+    left: 30%;
+    bottom: 10px;
+    position: absolute;
+    padding: 3px 0px;
+} 
+.bx-viewport {
+    height: 420px !important;
+    box-shadow: none !important;
+    border: none !important;
+    left: 0px !important;
+}                           

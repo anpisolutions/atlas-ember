@@ -15,7 +15,7 @@ Router.map(function() {
     this.route('residentialdidlnp');
   });
   this.route('workflowNew', {path:'workflow/new'});
-  this.route('workflowEdit');
+  this.route('workflowEdit', {path:'workflow/edit'});
 });
 console.log("Router==",Router);
 export default Router;

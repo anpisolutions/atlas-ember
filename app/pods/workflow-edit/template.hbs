@@ -1,4 +1,4 @@
-<div class="page-content">
+F Credit Check <div class="page-content">
 <div class="row">
 <div class="col-xs-12">
 	<!-- PAGE CONTENT BEGINS -->
@@ -158,8 +158,41 @@
                     </div>
                 </div>
                 <div class="new-gate-sec" style="float: none; list-style: none; position: relative; width: 216px;">
-                    {{workflow-gates  }}
+                    {{#each model as | entry |}}
                     
+                    <div class="single_gate workgate-active clearfix">
+                        <div class="gate_title text-ellipsis">
+                            {{entry.name}}
+                            <span class="pull-right gate_close_ic">
+                                <i class="icon-remove ">
+                                </i>
+                            </span>
+                        </div>
+                        <div class="sub-word-gate-div pull-left" onclick="get_tasks(10010)">
+                            <div class="work-circle blue">
+                                5
+                            </div>
+                            <span class=" work-circle-text ">
+                                Task(s)
+                            </span>
+                        </div>
+                        <div class="pull-right gate-icons">
+                            <i class="icon-edit">
+                            </i>
+                            <i class="icon-book">
+                            </i>
+                            <i class=" icon-info-sign">
+                            </i>
+                        </div>
+                        <div class="workgate-arrow">
+                            <i class="icon-angle-down">
+                            </i>
+                        </div>
+                        <div class="work-arrow">
+                        </div>
+                    </div>
+
+                    {{/each}}
                     
                     
                     
@@ -228,7 +261,40 @@
 				</tr>
 				</thead>
 				<tbody>
-				{{workflow-tasks  }}
+                {{#each model as | entry |}}
+				    <tr>
+                            <td class="index">
+                        1
+                        <span class="pull-right milestone" title="Milestone">
+                        </span>
+                    </td>
+                    <td class="dependantTasks show-dependant-task" title="Order Confirmation Verified">
+                        Check for Order Confirmation
+                    </td>
+                    <td class="dependantTasks show-dependant-task" title="">
+                    </td>
+                    <td>
+                        1 HOUR
+                    </td>
+                    <td>
+                        Sales Support
+                    </td>
+                    <td>
+                    </td>
+                    <td class="center">
+                        <div class="action-buttons">
+                            <a href="#" class="green">
+                                <i class="icon-pencil bigger-130">
+                                </i>
+                            </a>
+                            <a class="red" href="#">
+                                <i class="icon-trash bigger-130">
+                                </i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                {{/each}}
 				</tbody>
 			</table>
 		</div>

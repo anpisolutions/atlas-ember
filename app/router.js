@@ -20,4 +20,10 @@ Router.map(function() {
   });
 });
 console.log("Router==",Router);
+
+Router.reopen({
+  location: 'history'
+});
+
+
 export default Router;

@@ -36,7 +36,7 @@
                             <tr class="odd">
 
                                 <td >
-                                    {{#link-to 'gates' entry.id}} 
+                                    {{#link-to "workflow.gate" entry}}
                                         <span class="1020_fwnhide show">
                                         {{entry.name}}
                                         <i class="icon icon-edit pull-left cursor_pointer" title="Edit Workflow" style="font-size: 16px;"></i></span>
@@ -109,3 +109,4 @@
 </div>
 
 
+{{outlet}}

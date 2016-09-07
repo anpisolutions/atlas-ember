@@ -1,0 +1,64 @@
+<table id="workflow_details_tasks" class="grid table table-striped table-bordered resize-td  workflowdetails workflow_details_tasks_table" title="">
+				<thead>
+				<tr>
+					<th class="index" title="Sequence">
+						Seq.
+					</th>
+					<th>
+						Task Name
+					</th>
+					<th>
+						Dependent Task(s)
+					</th>
+					<th>
+						Duration
+					</th>
+					<th>
+						Functional Group
+					</th>
+					<th>
+						System Task
+					</th>
+					<th>
+						Actions
+					</th>
+				</tr>
+				</thead>
+				<tbody>
+			
+{{#each model.task_ids as |entry|}}
+				    <tr>
+                            <td class="index">
+                        1
+                        <span class="pull-right milestone" title="Milestone">
+                        </span>
+                    </td>
+                    <td class="dependantTasks show-dependant-task" title="Order Confirmation Verified">
+                        {{entry.name}}
+                    </td>
+                    <td class="dependantTasks show-dependant-task" title="">
+                    </td>
+                    <td>
+                        1 HOUR
+                    </td>
+                    <td>
+                        Sales Support
+                    </td>
+                    <td>
+                    </td>
+                    <td class="center">
+                        <div class="action-buttons">
+                            <a href="#" class="green">
+                                <i class="icon-pencil bigger-130">
+                                </i>
+                            </a>
+                            <a class="red" href="#">
+                                <i class="icon-trash bigger-130">
+                                </i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                {{/each}}
+</tbody>
+</table>

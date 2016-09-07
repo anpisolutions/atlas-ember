@@ -6,74 +6,25 @@ module.exports = function(app) {
   var idCount = 5;
   var workFlowData = [
       {
-        id: 0,
-        name: "Test-Name#1",
-        gates: 4,
-        tasks: 18,
-        usageCountInProg: 18,
-        usageCountComp: 16,
-        duration: "10 Day(s) 4 Hour(s) ",
-        createdOn: "05/28/2014 23:20:35 EST",
-        updatedOn: "09/03/2014 10:30:19 EST",
-        createdBy: "Ramakrishna Rao",
-        updatedBy: "Amy Fandel",
-        status: true
-      },
-      {
-        id: 1,
-        name: "Test-Name#2",
-        gates: 3,
-        tasks: 26,
-        usageCountInProg: 867,
-        usageCountComp: 134,
-        duration: "6 Day(s) 5 Hour(s) ",
-        createdOn: "06/25/2014 19:00:00 EST",
-        updatedOn: "03/10/2015 05:59:47 EST",
-        createdBy: "Ramakrishna Rao",
-        updatedBy: "QA System Global Admin",
-        status: true
-      },
-      {
-        id: 2,
-        name: "Test-Name#3",
-        gates: 6,
-        tasks: 37,
-        usageCountInProg: 27,
-        usageCountComp: 17,
-        duration: "52 Day(s) 2 Hour(s) ",
-        createdOn: "06/25/2014 19:00:00 EST",
-        updatedOn: "10/21/2014 09:46:31 EST",
-        createdBy: "Ramakrishna Rao",
-        updatedBy: "Amy Fandel",
-        status: false
-      },
-      {
-        id: 3,
-        name: "Test-Name#4",
-        gates: 5,
-        tasks: 17,
-        usageCountInProg: 17,
-        usageCountComp: 222,
-        duration: "6 Day(s) 5 Hour(s)",
-        createdOn: "06/29/2014 19:00:00 EST",
-        updatedOn: "11/26/2014 14:41:06 EST",
-        createdBy: "Ramakrishna Rao",
-        updatedBy: "Amy Fandel",
-        status: false
-      },
-      {
-        id: 4,
-        name: "Test-Name#5",
-        gates: 6,
-        tasks: 31,
-        usageCountInProg: 4,
-        usageCountComp: 41,
-        duration: "19 Day(s) 3 Hour(s) ",
-        createdOn: "06/29/2014 19:00:00 EST",
-        updatedOn: "11/14/2014 08:04:46 EST",
-        createdBy: "Ramakrishna Rao",
-        updatedBy: "Surendhar Partner Admin",
-        status: true
+      "id": 355104,
+      "partner_id": 1,
+      "name": "Karthik test",
+      "source_id": 3,
+      "is_default": false,
+      "created_at": 1467347875000,
+      "created_by": "User-1e7a436798",
+      "updated_at": 1467348800000,
+      "updated_by": "User-0404e3d491",
+      "gate_ids": [
+        2471,
+        2465,
+        2337
+      ],
+      "is_active": true,
+      "duration": 2,
+      "is_deleted": false,
+      "gates_count": 3,
+      "tasks_count": 19
       }        
   ];
 

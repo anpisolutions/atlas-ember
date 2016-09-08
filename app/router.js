@@ -6,7 +6,7 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('workflow', function() {
+  this.route('workflow', { path: '/' }, function() {
     this.route('gate', { path: 'gate/:workflow_id' }, function() {
       this.route('task', { path: 'task/:gate_id' });
     });

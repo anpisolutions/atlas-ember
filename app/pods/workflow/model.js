@@ -1,5 +1,4 @@
 import DS from 'ember-data';
-import moment from 'moment';
 
 
 export default DS.Model.extend({
@@ -8,11 +7,11 @@ export default DS.Model.extend({
   source_id: DS.attr('number'),
   is_default: DS.attr('boolean'),
   created_at: DS.attr('date', {
-    defaultValue() {  return moment(new Date()) ; }
+    defaultValue() {  return new Date() ; }
   }),
   created_by: DS.attr('string'),
   updated_at: DS.attr('date', {
-    defaultValue() { return moment(new Date()) ; }
+    defaultValue() { return new Date() ; }
   }),
   updated_by: DS.attr('string'),
   gate_ids: DS.hasMany('gates', { async: true }),

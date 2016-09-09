@@ -43,7 +43,7 @@
 
 
                                 <td class="center  " data-order="4">
-                                    {{entry.gates}}/{{entry.tasks}}
+                                    {{entry.gates_count}}/{{entry.tasks_count}}
                                 </td>
 
                                 <td data-order="18/16" class=" ">
@@ -55,19 +55,19 @@
                                 </td>
 
                                 <td class=" ">
-                                    {{entry.createdOn}}
+                                    {{entry.created_at}}
                                     <br>
-                                    {{entry.updatedOn}}
+                                    {{entry.updated_at}}
                                 </td>
 
                                 <td class=" ">
-                                    <i class="icon-user"></i>{{entry.createdBy}}
+                                    <i class="icon-user"></i>{{entry.created_by}}
                                     <br>
-                                    <i class="icon-user"></i>{{entry.updatedBy}}
+                                    <i class="icon-user"></i>{{entry.updated_by}}
                                 </td>
 
                                 <td class="center  ">
-                                {{bs-switch checked=entry.status}}
+                                {{bs-switch checked=entry.is_active}}
                                 </td>
                             </tr>
                               {{/each}}

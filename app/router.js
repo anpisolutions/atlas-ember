@@ -20,7 +20,7 @@ Router.map(function() {
   });
   this.route('workflowNew', {path:'workflow/new'});
   this.route('workflowEdit', {path:'workflow/edit/:id'}, function() {
-    this.resource("gates")
+    this.resource("gates");
   });
 });
 console.log("Router==",Router);

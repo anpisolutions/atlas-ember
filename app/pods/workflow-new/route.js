@@ -1,5 +1,4 @@
 import Ember from 'ember';
-import DS from 'ember-data';
 
 export default Ember.Route.extend({
     model: function() {
@@ -16,7 +15,7 @@ export default Ember.Route.extend({
             rec.save().then(function() {
                 rec.deleteRecord();
                 _this.transitionTo('workflow');
-            }).catch(function(resp) {
+            }).catch(function() {
                 alert("Failed adding Record.");
             });
         }

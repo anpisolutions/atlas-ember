@@ -46,7 +46,7 @@ export default Ember.Route.extend({
       "updated_by": "User-2a8442550f",
       "duration": null
   }
-]
+];
   }
 
 });

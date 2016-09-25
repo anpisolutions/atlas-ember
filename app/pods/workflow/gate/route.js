@@ -13,5 +13,21 @@ export default Ember.Route.extend({
       return this.transitionTo("workflow");
     }
     return this.transitionTo("workflow.gate.task", model.get('gate_ids').objectAt(0));
+  },
+  actions: {
+   showModal: function(name, model) {
+      this.render(name, {
+        into: 'application',
+        outlet: 'modal',
+        model: model
+      });
+    },
+    removeModal: function() {
+      this.disconnectOutlet({
+        outlet: 'modal',
+        parentView: 'application'
+      });
+    }
+
   }
 });

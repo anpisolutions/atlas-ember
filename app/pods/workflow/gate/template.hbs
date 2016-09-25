@@ -235,7 +235,12 @@
 				</div>
 			</div>
 			<div class="pull-right">
-				<button class="btn btn-success btn-xs bt-size-3" id="add_task_modal"><i class="icon icon-plus"></i>&nbsp;Add Task </button>
+            
+            <button {{action 'showModal' 'settings-modal' model}} class="btn btn-success btn-xs bt-size-3">
+            <i class="icon-plus"></i>&nbsp;Add Task123
+            </button>
+
+             
 			</div>
 				{{outlet}}
 			
@@ -247,8 +252,3 @@
 </div>
 <!-- /.row  -->
 </div>
-
-{{outlet}}
-{{#my-modal  enabled=false title="My modal #1"}}
-  This is the content of my modal #1
-{{/my-modal}}

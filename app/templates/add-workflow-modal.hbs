@@ -1,0 +1,74 @@
+  <div class="modal" style="display:block">
+    <div class="modal-dialog">
+      <div class="modal-content">
+   
+<div class="row" id="new-workflow-wrapper">
+  <div class="col-sm-12">
+    <div>
+      <div class="widget-header header-color-blue">
+        <h4 class="widget-title ">Add Workflow</h4><span class="widget-subtitle"></span>
+
+          <div class="widget-toolbar">
+            <a href="javascript:void(0)" onclick="javascript:close_popup_box()" data-action="close">
+             <i class="icon-remove"></i>
+            </a>
+          </div>
+       </div>
+      <div class="widget-body">
+        <div class="widget-main" style="padding: 0px;">
+          <div>
+            <div class="page-content clearfix">
+              <div class="row">
+                <div class="col-sm-12">
+                  <form accept-charset="UTF-8" action="/serviceorder/workflows/add_workflow" class="simple_form new_workflow" data-remote="true" id="new_workflow" method="post" novalidate="novalidate"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="?"></div>
+                      <div class=" clearfix">
+  <div class=" new-workflow-from">
+    <div class="space-10"></div>
+    <div class="row">
+      <div class="col-sm-3 align-right">
+        <label for="form-field-select-3" class="label-align"> Workflow Name<span class="red">*</span> : </label>
+      </div>
+      <div class="col-sm-7">
+        <div class="control-group string optional workflow_name"><div class="controls"><input class="string optional col-sm-12" id="workflow_name" maxlength="45" name="workflow[name]" placeholder="Workflow Name" size="45" type="text" value=""></div></div>
+      </div>
+    </div>
+
+    <div class="space-10"></div>
+    <div class="row">
+      <div class="col-sm-3 align-right">
+        <label for="form-field-select-3" class="label-align"> Business Entity : </label>
+      </div>
+      <div class="col-sm-7">
+        <div class="control-group select optional workflow_source_id"><div class="controls"><select class="select optional col-sm-12" id="workflow_source_id" name="workflow[source_id]"><option value="3">Equipment Order</option>
+<option value="6029">LNP ORDER</option>
+<option value="5010">Sales Order</option>
+<option value="5011">Residential Order</option>
+<option value="5012">Residential LNP Order</option></select></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</form>             
+   </div>
+              </div>
+
+            </div>
+            <div class="pop-bottom clearfix">
+              <div class="col-sm-12 text-right">
+                <div class="text-info alert alert-block alert-success" id="new_workflow_validation_response" style="padding: 2px 5px 2px 5px; border: none; margin: 5px 0px 0px; display: none; float: left;"></div>
+                <button class="btn btn-success btn-sm" onclick="if(validate_form()) {$('#new_workflow').submit();}">Add</button>
+                <button class="btn btn-sm" {{action 'removeModal'}}>Canncel </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>  
+       </div>
+    </div>
+  </div>
+<div class="modal-backdrop fade in"></div>

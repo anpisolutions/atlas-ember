@@ -1,6 +1,6 @@
-  <div class="modal" style="display:block">
+<div class="modal" style="display:block;" >
     <div class="modal-dialog">
-      <div class="modal-content">
+      <div class="modal-content" style="width:900px; margin-left: -150px">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
           <div class="widget-header header-color-blue">
@@ -10,229 +10,231 @@
                  <i class="icon-remove"></i>
                </a>
              </div>
-          </div>   
-        </div>
-        <div class="modal-body">
-          
-<div class="row" id="new-gate-wrapper">
-  <div class="col-sm-12">
-    <div>
-      
-      <div class="widget-body">
-        <div class="widget-main" style="padding: 0px;">
-          <div>
-            <div class="page-content clearfix">
-              <div class="row">
-                <div class="col-sm-12">
-                  <form accept-charset="UTF-8" action="/serviceorder/gates/add_gate" class="simple_form new_gate" data-remote="true" id="new_gate" method="post" novalidate="novalidate"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="?"></div>
-                      <div class=" clearfix">
-  <div class="col-sm-10 new-gate-from">
-       <div class="row">
-      <div class="col-sm-5 align-right">
-        <label for="form-field-select-3"> Gate Name : </label>
-      </div>
-      <div class="col-sm-7">
-        <div class="control-group string optional gate_name"><div class="controls"><input class="string optional col-sm-12" id="gate_name" name="gate[name]" placeholder="Gate Name" type="text" value=""></div></div>
-      </div>
-    </div>
-
-    <div class="space-10"></div>
-    <div class="row">
-      <div class="col-sm-5 align-right">
-        <label for="form-field-select-3"> Functional Group : </label>
-
-      </div>
-      <div class="col-sm-7">
-        <div class="control-group select optional gate_functional_group_id"><div class="controls"><select class="select optional col-sm-12" id="gate_functional_group_id" name="gate[functional_group_id]"><option value="13050">Operational Managers</option>
-<option value="17050">Operations Support</option>
-<option value="23260">QA Group</option>
-<option value="50">QA Team</option>
-<option value="51">DEV Team</option>
-<option value="7050">Customer Operations</option>
-<option value="10152">Sales Engineer</option>
-<option value="1058">Account Management</option>
-<option value="19050">Provisioning</option>
-<option value="151">Direct Sales</option>
-<option value="20052">Operations Support</option>
-<option value="20050">Operational Managers</option>
-<option value="3000">SALES_OPS</option>
-<option value="3010">SERVICE_DELIVERY</option>
-<option value="3020">Finance Operation</option>
-<option value="3040">Service Coordinator</option>
-<option value="3050">Implementation Specialist</option>
-<option value="3060">LNP Provisioner</option>
-<option value="3070">Broadband Provisioner</option>
-<option value="3080">Hosted Provisioner</option>
-<option value="3090">Sales Support</option>
-<option value="3100">SD Manager</option>
-<option value="3110">Implementation Engineer</option>
-<option value="3120">Sales Operation</option>
-<option value="150">Accounts Receivable</option>
-<option value="3051">Network Operations</option></select></div></div>
-      </div>
-    </div>
-
-    <div class="space-10"></div>
-    <div class="row">
-      <div class="col-sm-5 align-right">
-        <label for="form-field-select-3"> Task List : </label>
-      </div>
-      <div class="col-sm-7">
-        <div class="control-group select optional gate_task_template_id"><div class="controls"><select class="select optional col-sm-12" id="gate_task_template_id" name="gate[task_template_id]"><option value="0">No Template</option>
-<option value="2334">Transition to Care</option>
-<option value="2335">Resource Allocation</option>
-<option value="2336">Order Provisioning - Simple</option>
-<option value="2337">Test and Turn Up - Simple</option>
-<option value="2338">Order Provisioning - Fasttrack</option>
-<option value="2339">Test and Turn Up - Fasttrack</option>
-<option value="2400">MAC Test and Turn Up</option>
-<option value="2401">MAC Order Entry and Verification</option>
-<option value="2402">MAC - Financial Verification</option>
-<option value="2405">Billing - No Equipment</option>
-<option value="50">Order Provisioning Hosted New DID Template</option>
-<option value="51">Test and Turn Up Hosted New DID Template</option>
-<option value="52">Order Provisioning Hosted LNP Gate Template</option>
-<option value="53">Test and Turn Up Hosted LNP Template</option>
-<option value="54">Test and Turn Up Hosted LNP, Broad band Template</option>
-<option value="55">Test and Turn Up Hosted LNP Professional Services Template</option>
-<option value="1">Order Acknowledgement Hosted New DID Template</option>
-<option value="1050">Manual Task</option>
-<option value="1051">Credit Card Check Template</option>
-<option value="1052">Provision Service</option>
-<option value="1053">Delete</option>
-<option value="2403">MAC Order Provision Service</option>
-<option value="2">Provisioning Template  MAC</option>
-<option value="3">Provisioning Template LNP</option>
-<option value="4">Provisioning Template NEW</option>
-<option value="5">Provisioning Template NEW BB</option>
-<option value="6">Provisioning Template NEW LNP</option>
-<option value="7">Provisioning Template NEW LNP PRO</option>
-<option value="8">Provisioning Template NEW LNP BB</option>
-<option value="1100">unique check</option>
-<option value="2404">MAC Test and Turn Up (no equipment)</option>
-<option value="2501">QA provision</option>
-<option value="56">Legacy WorkFlow Template</option>
-<option value="4010">Order Verification Template</option>
-<option value="201">Order Acknowledgement Gate Template</option>
-<option value="4020">Credit Check Template</option>
-<option value="4030">Service Delivery Template</option>
-<option value="4040">Service Delivery Pre-check Template</option>
-<option value="205">Billing Gate Template</option>
-<option value="200">Credit Approval Gate Template</option>
-<option value="204">Test and Turn Up Gate Template</option>
-<option value="150">Order Entry and Verification gate template</option>
-<option value="202">Service Design Gate Template</option>
-<option value="203">Order Provisioning Gate Template</option>
-<option value="2052">QA Simple Manual Task</option>
-<option value="7106">Order Provisioning LNP Only</option>
-<option value="7107">Test and Turn Up LNP Only</option>
-<option value="18050">LNP Order</option>
-<option value="18051">Change DID</option>
-<option value="19050">Order Entry and Verification - Install MAC</option>
-<option value="19052">Test and Turn Up - Install MAC w/ Equipment</option>
-<option value="19053">Order Provisioning - Install MAC w/ Equipment</option>
-<option value="19054">MAC Order Provision Service - Install MAC</option>
-<option value="20050">Service Design - LNP/Toll Free Validation Call</option>
-<option value="20051">LNP/TF Only - Order Provisioning Gate</option>
-<option value="20052">LNP/Toll Free Only - Test and Turn Up</option>
-<option value="20053">LNP/TF Only - Order Entry and Verificaiton</option>
-<option value="20120">Order Entry and Verification - Broadband</option>
-<option value="21050">Service Design - Broadband</option>
-<option value="20121">Billing Gate - Broadband</option>
-<option value="21100">Service Design - Wholesale</option>
-<option value="21150">Change DID/DID Swap</option>
-<option value="21200">Order Provisioning basic</option>
-<option value="21201">Billing Gate basic</option>
-<option value="21250">Billing Gate Basic</option>
-<option value="22051">easy list</option>
-<option value="5050">Broadband Provisioning</option>
-<option value="5051">Broadband Test &amp; Turn Up</option>
-<option value="5052">Service Design LNP Gate</option>
-<option value="6050">Drag1</option>
-<option value="6051">Drag2</option>
-<option value="6052">Drag3</option>
-<option value="6053">Drag4</option>
-<option value="7105">Test and Turn Hosted LNP w/ Prof. Services</option>
-<option value="12075">Billing Gate Template (no equipment)</option>
-<option value="12078">WC Test and Turn Up Hosted  DID Integration Template</option>
-<option value="22052">easy</option>
-<option value="13154">Order Provisioning LNP; DID Forward/LNP Workflow</option>
-<option value="13155">Test and Turn Up; DID Forward/LNP Workflow</option>
-<option value="13156">Training Only Gate</option>
-<option value="13157">Order Provisioning LNP; DID Forward/LNP Workflow</option>
-<option value="13158">Training Only</option>
-<option value="13160">Transition to Support Only</option>
-<option value="14051">Billing Gate Template with Professional Services</option>
-<option value="16050">Order Entry verification with Lease</option>
-<option value="18052">MAC - DID Change</option>
-<option value="19055">Billing Gate - Install MAC</option>
-<option value="12077">Order Provisioning (DID Integration)</option>
-<option value="13152">Service Design LNP - DID Forward/LNP Workflow</option>
-<option value="14050">Order Entry and Verification w/ Professional Services</option>
-<option value="4050">QA Billing</option>
-<option value="7050">QAgate</option>
-<option value="7100">Disconnect Verification</option>
-<option value="7101">Disconnect Services and Equipment</option>
-<option value="7102">Disconnect Circuit</option>
-<option value="7103">Billing Circuit Disconnect</option>
-<option value="7104">Billing - Services &amp; Equipment Disconnect</option>
-<option value="11050">Hosted - MAC Simple Provisioning</option>
-<option value="11051">Hosted - MAC Simple Billing</option>
-<option value="12071">Order Provisioning Wholesale LNP Gate Template</option>
-<option value="12072">Post Billing - Training/Followi Up/Transition to Support</option>
-<option value="12073">Test and Turn Up - Wholesale Simple</option>
-<option value="12076">Wholesale Post Billing-Training/Support Transition</option>
-<option value="13050">Order Provisioning Hosted LNP/Prof Services</option>
-<option value="13100">Wholesale Order Entry and Verification gate template</option>
-<option value="13151">Order Entry and Verification - MAC No Equip</option>
-<option value="15050">Equipment Ordered</option>
-<option value="15051">Equipment only Billing Task List</option>
-<option value="12100">Manual Gate</option>
-<option value="12102">Rental System Tasks Gate</option>
-<option value="12103">Rental Billing</option>
-<option value="24050">Residential Manual Gate QA</option>
-<option value="24051">Residential System Tasks Gate</option>
-<option value="24100">Residential Billing Gate</option>
-<option value="24250">Residential LNP task list</option>
-<option value="24255">Post Billing - RMA</option>
-<option value="24300">Test and Turn Up - RMA</option>
-<option value="24302">Order Entry and Verification - RMA</option>
-<option value="24257">Residential System Task - Order Prov with LNP</option>
-<option value="24301">Post Billing - RMA</option>
-<option value="24256">Order Provisioning - Pioneer with LNP</option>
-<option value="25050">Order Provisioning - Simple Leasing</option>
-<option value="25051">Billing Gate - Leasing</option>
-<option value="25052">Order Provisioning - LNP Gate Leasing</option>
-<option value="25359">cancel</option>
-<option value="32155">Residential System Task with LNP</option>
-<option value="31160">Residential System Tasks with LNP</option>
-<option value="31161">DID/LNP Order Provisioning - LNP</option>
-<option value="31162">DID/LNP Order - LNP Test and Turn Up</option>
-<option value="31163">Residential DID/LNP Order Provisioning - LNP</option>
-<option value="33694">OneTwo</option>
-<option value="33717">OneTwoThree</option>
-<option value="38150">Order Provisioning - SIP Trunking</option>
-<option value="38151">Order Provisioning - SIP Trunking with LNP</option></select></div></div>
-      </div>
-    </div>
-
-    <div class="control-group hidden gate_workflow_id"><div class="controls"><input class="hidden col-sm-12" id="gate_workflow_id" name="gate[workflow_id]" type="hidden" value="1020"></div></div>
-  </div>
-</div>
-
-
-</form>                </div>
-              </div>
-
-            </div>
-            
           </div>
         </div>
+        <div class="modal-body">
+
+                <form accept-charset="UTF-8" action="/serviceorder/tasks/add_task" class="simple_form new_task" data-remote="true" id="new_task" method="post" novalidate="novalidate"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="?"></div>
+                    <div class=" clearfix">
+                        <div class="col-sm-7 task-from">
+                            <div class="space-10"></div>
+                            <div class="row">
+                                <div class="col-sm-5 align-right padding0">
+                                    <label for="form-field-select-3"> Task Name<span class="red">*</span> </label>
+
+                                </div>
+                                <div class="col-sm-7">
+                                    <div class="control-group string optional task_name"><div class="controls"><input class="string optional col-sm-12" id="task_name" name="task[name]" placeholder="Task Name" type="text" value=""></div></div>
+                                </div>
+                            </div>
+                            <div class="space-10"></div>
+                            <div class="row">
+                                <div class="col-sm-5 align-right padding0">
+                                    <label for="form-field-select-3"> Description </label>
+
+                                </div>
+                                <div class="col-sm-7">
+                                    <textarea class="new-text-area" id="task_comment" label="false" name="task[comment]" placeholder="Task Description"></textarea>
+                                    <!--<textarea name='' class="new-text-area" id="" onchange=""></textarea>-->
+                                </div>
+                            </div>
+
+                            <div class="space-10"></div>
+                            <div class="row">
+                                <div class="col-sm-5 align-right padding0">
+                                    <label for="form-field-select-3"> Duration </label>
+
+                                </div>
+                                <div class="col-sm-7">
+                                    <div class=" ">
+                                        <div class="control-group select optional task_duration"><div class="controls"><select class="select optional col-sm-4" id="task_duration" name="task[duration]"><option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                            <option value="13">13</option>
+                                            <option value="14">14</option>
+                                            <option value="15">15</option>
+                                            <option value="16">16</option>
+                                            <option value="17">17</option>
+                                            <option value="18">18</option>
+                                            <option value="19">19</option>
+                                            <option value="20">20</option>
+                                            <option value="21">21</option>
+                                            <option value="22">22</option>
+                                            <option value="23">23</option>
+                                            <option value="24">24</option>
+                                            <option value="25">25</option>
+                                            <option value="26">26</option>
+                                            <option value="27">27</option>
+                                            <option value="28">28</option>
+                                            <option value="29">29</option>
+                                            <option value="30">30</option></select></div></div>
+                                    </div>
+                                    <div class="">
+                                        <div class="control-group select optional task_duration_unit"><div class="controls"><select class="select optional col-sm-6 pull-right" id="task_duration_unit" name="task[duration_unit]"><option value="HOUR">Hour(s)</option>
+                                            <option value="DAY">Day(s)</option></select></div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-10"></div>
+                            <div class="row">
+                                <div class="col-sm-5 align-right padding0">
+                                    <label for="form-field-select-3"> Functional Group </label>
+
+                                </div>
+                                <div class="col-sm-7">
+                                    <div class="control-group select optional task_functional_group_id"><div class="controls"><select class="select optional col-sm-12" id="task_functional_group_id" name="task[functional_group_id]"><option value="13050">Operational Managers</option>
+                                        <option value="17050">Operations Support</option>
+                                        <option value="23260">QA Group</option>
+                                        <option value="50">QA Team</option>
+                                        <option value="51">DEV Team</option>
+                                        <option value="7050">Customer Operations</option>
+                                        <option value="10152">Sales Engineer</option>
+                                        <option value="1058">Account Management</option>
+                                        <option value="19050">Provisioning</option>
+                                        <option value="151">Direct Sales</option>
+                                        <option value="20052">Operations Support</option>
+                                        <option value="20050">Operational Managers</option>
+                                        <option value="3000">SALES_OPS</option>
+                                        <option value="3010">SERVICE_DELIVERY</option>
+                                        <option value="3020">Finance Operation</option>
+                                        <option value="3040">Service Coordinator</option>
+                                        <option value="3050">Implementation Specialist</option>
+                                        <option value="3060">LNP Provisioner</option>
+                                        <option value="3070">Broadband Provisioner</option>
+                                        <option value="3080">Hosted Provisioner</option>
+                                        <option value="3090">Sales Support</option>
+                                        <option value="3100">SD Manager</option>
+                                        <option value="3110">Implementation Engineer</option>
+                                        <option value="3120">Sales Operation</option>
+                                        <option value="150">Accounts Receivable</option>
+                                        <option value="3051">Network Operations</option></select></div></div>
+                                </div>
+                            </div>
+                            <div class="space-10"></div>
+                            <div class="row">
+                                <div class="col-sm-5 align-right padding0">
+                                    <label id="tooltip-auto" title="Automated Task"> System Task </label>
+                                </div>
+                                <div class="col-sm-7">
+                                    <div class="col-sm-2 check-box-padding">
+                                        <input name="task[is_system_task]" type="hidden" value="0"><input class="ace" id="task_is_system_task" label="false" name="task[is_system_task]" type="checkbox" value="1" wrapper="false">
+                                        <span class="lbl"></span>
+                                    </div>
+                                    <div class="col-sm-10 select-padding">
+                                        <div class="control-group select optional disabled task_system_task_id"><div class="controls">
+                                            <select class="select optional disabled col-sm-12 " id="task_system_task_id" name="task[system_task_id]"><option value="">Please select</option>
+                                            <option can_rerun="Y" value="17">Welcome Email</option>
+                                            <option can_rerun="N" value="12">Change Order</option>
+                                            <option can_rerun="Y" value="53">DID Porting</option>
+                                            <option can_rerun="N" value="1">Ship the Equipment</option>
+                                            <option can_rerun="N" value="2">Provision Service</option>
+                                            <option can_rerun="N" value="3">Auto Assign DID</option>
+                                            <option can_rerun="N" value="4">Start Service the Billing</option>
+                                            <option can_rerun="N" value="5">Generate the Equiment Invoice</option>
+                                            <option can_rerun="Y" value="6">Send Service Authentication Email</option>
+                                            <option can_rerun="Y" value="7">Send Activation Email</option>
+                                            <option can_rerun="Y" value="8">Send User Creation Email</option>
+                                            <option can_rerun="Y" value="10">Send Admin User Creation Email</option>
+                                            <option can_rerun="Y" value="11">Send End User Creation Email</option>
+                                            <option can_rerun="Y" value="18">Credit Check</option>
+                                            <option can_rerun="N" value="19">Send Rental Billing Info</option></select></div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-10"></div>
+                            <div class="row">
+                                <div class="col-sm-5 align-right padding0">
+                                    <label title="Milestone Task"> Milestone Task </label>
+
+                                </div>
+                                <div class="col-sm-7">
+                                    <div class="col-sm-2 check-box-padding">
+                                        <input name="task[is_milestone]" type="hidden" value="0"><input class="ace" id="task_is_milestone" label="false" name="task[is_milestone]" type="checkbox" value="1" wrapper="false">
+                                        <span class="lbl"></span>
+                                    </div>
+                                    <div class="col-sm-10">
+
+                                        <div class="col-sm-7 align-right padding0">
+                                            <label title="Milestone Task"> Skippable </label>
+                                        </div>
+                                        <div class="col-sm-2 check-box-padding">
+                                            <input name="task[is_skippable]" type="hidden" value="0"><input class="ace" id="task_is_skippable" label="false" name="task[is_skippable]" type="checkbox" value="1" wrapper="false">
+                                            <span class="lbl"></span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-10"></div>
+                            <div class="row">
+                                <div class="col-sm-5 align-right padding0">
+                                    <label title="Milestone Task"> Add after<span class="red">*</span>  </label>
+
+                                </div>
+                                <div class="col-sm-7">
+                                    <div class="new-task-select">
+                                        <select id="task_seq_number" label="false" name="task[seq_number]" onchange="javascript:dependency_tasks_filter()" wrapper="false"><option value="">Please select</option>
+                                            <option value="1500">Check for Order Confirmation</option>
+                                            <option value="2500">Call Customer to verify Order</option>
+                                            <option value="4000">Perform Order changes (if needed)</option></select>
+                                        <span class="lbl"></span>
+                                    </div>
+                                    <div class="col-sm-10">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="space-10"></div>
+                        </div>
+                        <div class="col-sm-5">
+                            <div class="space-10"></div>
+                            <div class="depends-title-div">This Task Depends On </div>
+                            <div class="task-select-div">
+                                <ul class="task-select-ul" id="dependent_tasks_ul">
+
+                                    <li class="col-sm-12 check-center hide" id="1000">
+                                        <div class="col-sm-2 pull-left">
+                                            <input type="checkbox" name="[dep_tasks][]" class="ace " id="dependenent_task_0" value="36698"><span class="lbl "></span>
+                                        </div>
+                                        <div class="col-sm-10 pull-left">
+                                            <label class="check-padding" for="form-field-select-3"> Check for Order Confirmation</label>
+                                        </div>
+                                    </li>
+                                    <li class="col-sm-12 check-center hide" id="2000">
+                                        <div class="col-sm-2 pull-left">
+                                            <input type="checkbox" name="[dep_tasks][]" class="ace " id="dependenent_task_1" value="36699"><span class="lbl "></span>
+                                        </div>
+                                        <div class="col-sm-10 pull-left">
+                                            <label class="check-padding" for="form-field-select-3"> Call Customer to verify Order</label>
+                                        </div>
+                                    </li>
+                                    <li class="col-sm-12 check-center hide" id="3000">
+                                        <div class="col-sm-2 pull-left">
+                                            <input type="checkbox" name="[dep_tasks][]" class="ace " id="dependenent_task_2" value="36700"><span class="lbl "></span>
+                                        </div>
+                                        <div class="col-sm-10 pull-left">
+                                            <label class="check-padding" for="form-field-select-3"> Perform Order changes (if needed)</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <input type="hidden" name="gate_id" value="10000">
+                        <input type="hidden" name="remaining_gates_duration" id="remaining_gates_duration" value="90">
+                    </div>
+                </form>
+            </div>
+          <div>
       </div>
-    </div>
-  </div>
-</div>
-        </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal" {{action 'removeModal'}}>Close</button>
           <button type="button" class="btn btn-primary" >Save</button>
